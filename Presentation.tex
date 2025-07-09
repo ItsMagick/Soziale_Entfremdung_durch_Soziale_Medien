@@ -1,0 +1,41 @@
+%! Author = charon
+%! Date = 1/9/24
+
+\documentclass{beamer}
+
+\usetheme{metropolis}
+\makeatletter
+\setbeamertemplate{footline}{
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex,leftskip=1em]{author in head/foot}%
+            \usebeamerfont{author in head/foot}Sebastian Peschke - Soziale Entfremdung durch soziale Medien \hfill \insertframenumber{} / \inserttotalframenumber{} \hfill
+        \end{beamercolorbox}
+
+    }
+}%
+\makeatother
+
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[sorting=none]{biblatex}
+\usepackage{tikz}
+\usepackage{csquotes}
+\usepackage{glossaries}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{booktabs}
+
+\title{Soziale Entfremdung durch soziale Medien}
+\date{10.07.2024}
+\author{Sebastian Peschke}
+\institute{Hochschule für angewandte Wissenschaften Hof}
+
+\addbibresource{src.bib}
+\begin{document}
+    \maketitle
+    \input{presentation/intro}
+    \input{presentation/advanced}
+    \printbibliography[title={Quellen}]
+\end{document}
